@@ -1,0 +1,2 @@
+{ "compilerOptions": { "composite": true, "module": "ESNext", "moduleResolution": "bundler", "skipLibCheck": true, "allowSyntheticDefaultImports": true, "types": ["node"] },
+  "include": ["vite.config.ts", "tailwind.config.ts"] }

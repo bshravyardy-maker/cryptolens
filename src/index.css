@@ -1,0 +1,15 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:#f6eee2;--panel:#fffaf3;--line:#e2d3bf;--fg:#2b211a;--mute:#6f5f50;--accent:#b8481f;--accentfg:#ffffff;--bad:#a4281c;--t0:#f9dcc8;--t1:#e1e9d3;--t2:#f5e6b8;--t3:#f2d3d5;--t4:#d9e7ea}
+:root.dark{--bg:#1d1713;--panel:#29211b;--line:#4a3d32;--fg:#f2e7d9;--mute:#b6a591;--accent:#ee9361;--accentfg:#1d1209;--bad:#ff8a7a;--t0:#4a3426;--t1:#2f3a2a;--t2:#4a4120;--t3:#4a2d31;--t4:#28383e}
+body{background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,sans-serif}
+@layer components{
+  .btn{@apply border border-line bg-panel px-3 py-1.5 text-sm rounded-sm hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent disabled:opacity-40}
+  .btn-p{@apply border border-accent bg-accent text-accentfg px-3 py-1.5 text-sm rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-40}
+  .field{@apply w-full border border-line bg-bg px-2 py-1.5 text-sm rounded-sm font-mono focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent}
+  .panel{@apply border border-line bg-panel p-4 rounded-sm}
+  .label{@apply block text-xs uppercase tracking-wide text-mute mb-1}
+}
+
+.caret{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.caret{animation:none}}
