@@ -10,16 +10,9 @@ Built as a college problem-based learning (PBL) project in cryptography. Everyth
 
 ---
 
-## Screenshots
+## LIVE SITE 
 
-Add your own screenshots to a `docs/` folder and link them here:
-
-```md
-![Home page](docs/home.png)
-![AES visualizer](docs/aes.png)
-![Attack Lab](docs/attack-lab.png)
-```
-
+https://cryptolen.netlify.app/
 ---
 
 ## Features
